@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Gallery</title>
+    <link rel="icon" type="image" href="logo.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <section>
+      <ul>
+    <li> <a href="index (2).html"> x </a> </li>
+  </ul>
+    </section>
+</header>
+<footer>
+<section>
+<div class="full-img" id="fullImgBox">
+    <img src="land1.jpg" id="fullImg">
+    <span onclick="closeFullImg()"> x </span>
+</div>
+
+  <div class="img-gallery">
+      <img src="land1.jpg" onclick="openFullImg(this.src)">
+      <img src="people1.jpg" onclick="openFullImg(this.src)">
+      <img src="food1.jpg" onclick="openFullImg(this.src)">
+      <img src="trav1.jpg" onclick="openFullImg(this.src)">
+      <img src="flora1.jpg" onclick="openFullImg(this.src)">
+      <img src="land2.jpg" onclick="openFullImg(this.src)">
+      <img src="people2.jpg" onclick="openFullImg(this.src)">
+      <img src="food2.jpg" onclick="openFullImg(this.src)">
+      <img src="trav2.jpg" onclick="openFullImg(this.src)">
+      <img src="flora2.jpg" onclick="openFullImg(this.src)">
+      <img src="land3.jpg" onclick="openFullImg(this.src)">
+      <img src="people3.jpg" onclick="openFullImg(this.src)">
+      <img src="food3.jpg" onclick="openFullImg(this.src)">
+      <img src="trav3.jpg" onclick="openFullImg(this.src)">
+      <img src="flora3.jpg" onclick="openFullImg(this.src)">
+      <img src="land4.jpg" onclick="openFullImg(this.src)">
+      <img src="people4.jpg" onclick="openFullImg(this.src)">
+      <img src="food4.jpg" onclick="openFullImg(this.src)">
+      <img src="trav4.jpg" onclick="openFullImg(this.src)">
+      <img src="flora4.jpg" onclick="openFullImg(this.src)">
+      <img src="land6.jpg" onclick="openFullImg(this.src)">
+      <img src="people5.jpg" onclick="openFullImg(this.src)">
+      <img src="food5.jpg" onclick="openFullImg(this.src)">
+      <img src="trav5.jpg" onclick="openFullImg(this.src)">
+      <img src="flora5.jpg" onclick="openFullImg(this.src)">
+      <img src="land7.jpg" onclick="openFullImg(this.src)">
+  </div>
+
+<script>
+    var fullImgBox = document.getElementById("fullImgBox");
+    var fullImg = document.getElementById("fullImg");
+
+    function openFullImg(pic){
+       fullImgBox.style.display = "flex";
+       fullImg.src = pic;
+       }
+
+    function closeFullImg(){
+        fullImgBox.style.display = "none";
+     }
+</script>
+</section>
+</footer>
+</body>
+</html>
